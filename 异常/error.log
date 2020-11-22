@@ -1,0 +1,6 @@
+2020-11-16 14-26-56 ERROR 
+ Traceback (most recent call last):
+  File "G:/study/ÇàÃç´úÂë/study_fpdu/Òì³£/3..py", line 15, in <module>
+    int('bb')
+ValueError: invalid literal for int() with base 10: 'bb'
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django框架Demo</title>
+</head>
+<body>
+    <ul>
+         <li>
+             <a href="/http/demo/?id=1&k=abc">GET请求演示Demo</a>
+         </li>
+         <li>
+             <form action="/http/demo/" method="post">
+                    {% csrf_token %}
+                 <input type="text" name="kw">
+                 <button>POST请求演示</button>
+
+             </form>
+         </li>
+        <li>
+            <p>{{ lovestr }}</p>
+        </li>
+    </ul>
+</body>
+</html>

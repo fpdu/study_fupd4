@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板dome</title>
+</head>
+<body>
+    <ul>
+        <li>变量的输出:{{ arr }}</li>
+        <li>变量中的点:{{ arr.1 }}</li>
+        <li>输出字典:{{ var1dict }}</li>
+        <li>输出字典:{{ var1dict.age }}</li>
+        <li>输出字典:{{ obj1 }}</li>
+        <li>输出字典:{{ obj1.age }}</li>
+        <li>输出字典:{{ obj1.func }}</li>
+
+        {% for i in arr %}
+        <li>{{ i }}</li>
+        {% endfor %}
+        {% for k,v in var1dict.items %}
+        <li>{{ k }}==>{{ v }}</li>
+        {% endfor %}
+
+
+        <li>
+            {% comment %}
+            {% if var1dict.age > 20 %}
+                年轻人
+            {% else %}
+                小年轻
+            {% endif %}
+            {% endcomment %}
+        </li>
+
+        <li>
+            单行注释标签:{# {{ var }} #}
+        </li>
+        <li>
+            {{ varstr | upper | lower }}
+        </li>
+        <li>
+            {{ var1html}}
+        </li>
+
+    </ul>
+</body>
+</html>

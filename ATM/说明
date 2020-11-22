@@ -1,0 +1,10 @@
+银行卡:
+    1.卡号:card_id  char(10)
+    2.密码:pwd    char(15)
+    3.余额:money  int
+    4.是否锁卡:islock   bool
+person:
+    1.name:姓名  char(5)
+    2.userid:身份证    char(18)
+    3.phone:手机号     char(11)
+    4.card:银行卡      char(10)
